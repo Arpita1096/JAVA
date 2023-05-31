@@ -40,3 +40,11 @@ class MyThread20 extends Thread{
 		t.print(20);
 	}
 }
+public class ThreadExample {
+	public static void main(String args[]) {
+		Table1 t1 = new Table1();
+		MyThread10 mt10 = new MyThread10(t1);
+		MyThread20 mt20 = new MyThread20(t1);
+		mt10.start();
+		mt20.start();
+	}
